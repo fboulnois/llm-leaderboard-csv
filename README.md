@@ -1,7 +1,7 @@
 # LLM Leaderboard CSVs
 
 Code to generate CSVs of the [Huggingface Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)
-and the [LMSYS Chatbot Arena Leaderboard](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard)
+and the [LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard)
 in R. The code also generates a CSV of the merged leaderboard.
 
 The resulting CSVs are in the [`csv`](csv) directory.
