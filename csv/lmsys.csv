@@ -1,0 +1,110 @@
+rank,model,arena_elo,95_pct_ci,votes,organization,license,knowledge_cutoff,url
+1,GPT-4o-2024-05-13,1287,+3/-3,42046,OpenAI,Proprietary,2023/10,https://openai.com/index/hello-gpt-4o/
+2,Gemini-Advanced-0514,1267,+3/-4,34382,Google,Proprietary,Online,https://gemini.google.com/advanced
+2,Gemini-1.5-Pro-API-0514,1265,+4/-3,35184,Google,Proprietary,2023/11,https://deepmind.google/technologies/gemini/pro
+4,Gemini-1.5-Pro-API-0409-Preview,1258,+3/-3,55731,Google,Proprietary,2023/11,https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/
+4,GPT-4-Turbo-2024-04-09,1257,+3/-2,65760,OpenAI,Proprietary,2023/12,https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4
+6,GPT-4-1106-preview,1251,+2/-3,83330,OpenAI,Proprietary,2023/4,https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+6,Claude 3 Opus,1249,+2/-2,133262,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family
+6,GPT-4-0125-preview,1246,+3/-2,76586,OpenAI,Proprietary,2023/12,https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+9,Yi-Large-preview,1240,+3/-3,41051,01 AI,Proprietary,Unknown,https://platform.lingyiwanwu.com/docs#%E6%A8%A1%E5%9E%8B
+10,Gemini-1.5-Flash-API-0514,1230,+3/-4,33524,Google,Proprietary,2023/11,https://deepmind.google/technologies/gemini/flash/
+11,Yi-Large,1218,+6/-7,5555,01 AI,Proprietary,Unknown,https://platform.01.ai/docs#models-and-pricing
+11,Bard (Gemini Pro),1208,+7/-5,11853,Google,Proprietary,Online,https://bard.google.com/
+11,Nemotron-4-340B-Instruct,1208,+6/-6,7816,Nvidia,NVIDIA Open Model,2023/6,https://huggingface.co/nvidia/Nemotron-4-340B-Instruct
+12,Llama-3-70b-Instruct,1207,+3/-2,135075,Meta,Llama 3 Community,2023/12,https://llama.meta.com/llama3/
+13,Claude 3 Sonnet,1201,+3/-2,102902,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family
+14,Reka-Core-20240501,1200,+3/-3,50957,Reka AI,Proprietary,Unknown,https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
+17,Command R+,1189,+2/-2,69492,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r-plus-microsoft-azure/
+17,Qwen2-72B-Instruct,1187,+4/-4,20829,Alibaba,Qianwen LICENSE,2024/6,https://qwenlm.github.io/blog/qwen2/
+17,GPT-4-0314,1186,+3/-3,56097,OpenAI,Proprietary,2021/9,https://openai.com/research/gpt-4
+17,GLM-4-0116,1184,+6/-7,7595,Zhipu AI,Proprietary,Unknown,https://open.bigmodel.cn/
+17,Qwen-Max-0428,1183,+4/-3,25685,Alibaba,Proprietary,Unknown,https://help.aliyun.com/zh/dashscope/developer-reference/api-details
+20,Claude 3 Haiku,1179,+3/-2,93462,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family
+23,Reka-Flash-Preview-20240611,1165,+9/-8,4668,Reka AI,Proprietary,Unknown,https://docs.reka.ai/http-api.html#generation
+23,Qwen1.5-110B-Chat,1162,+3/-3,27494,Alibaba,Qianwen LICENSE,2024/4,https://qwenlm.github.io/blog/qwen1.5-110b/
+23,GPT-4-0613,1161,+3/-3,80263,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
+23,Yi-1.5-34B-Chat,1160,+5/-5,16641,01 AI,Apache-2.0,2024/5,https://huggingface.co/01-ai/Yi-1.5-34B-Chat
+23,Mistral-Large-2402,1157,+2/-3,58964,Mistral,Proprietary,Unknown,https://mistral.ai/news/mistral-large/
+23,Reka-Flash-21B-online,1156,+4/-4,16039,Reka AI,Proprietary,Online,https://docs.reka.ai/http-api.html#generation
+26,Llama-3-8b-Instruct,1153,+3/-2,91169,Meta,Llama 3 Community,2023/3,https://llama.meta.com/llama3/
+28,Claude-1,1149,+5/-4,21216,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/introducing-claude
+29,Command R,1148,+3/-3,50195,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r
+29,Mistral Medium,1148,+3/-3,35600,Mistral,Proprietary,Unknown,https://mistral.ai/news/la-plateforme/
+29,Reka-Flash-21B,1148,+3/-4,25811,Reka AI,Proprietary,2023/11,https://www.reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models
+30,Qwen1.5-72B-Chat,1147,+3/-3,40741,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5/
+30,Mixtral-8x22b-Instruct-v0.1,1146,+3/-3,40219,Mistral,Apache 2.0,2024/4,https://mistral.ai/news/mixtral-8x22b/
+36,Claude-2.0,1131,+5/-5,12789,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/claude-2
+36,Gemini Pro (Dev API),1131,+6/-5,18839,Google,Proprietary,2023/4,https://ai.google.dev/docs/gemini_api_overview
+36,Zephyr-ORPO-141b-A35b-v0.1,1127,+7/-8,4890,HuggingFace,Apache 2.0,2024/4,https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1
+36,Qwen1.5-32B-Chat,1125,+4/-4,22835,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5-32b/
+36,Mistral-Next,1124,+5/-5,12403,Mistral,Proprietary,Unknown,https://chat.mistral.ai/chat
+36,Phi-3-Medium-4k-Instruct,1122,+6/-4,13366,Microsoft,MIT,2023/10,https://huggingface.co/microsoft/Phi-3-medium-4k-instruct
+38,Starling-LM-7B-beta,1119,+4/-5,16696,Nexusflow,Apache-2.0,2024/3,https://huggingface.co/Nexusflow/Starling-LM-7B-beta
+38,Claude-2.1,1118,+4/-3,37745,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/claude-2-1
+39,GPT-3.5-Turbo-0613,1117,+3/-3,39045,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5
+42,Yi-34B-Chat,1111,+5/-5,15946,01 AI,Yi License,2023/6,https://huggingface.co/01-ai/Yi-34B-Chat
+42,Gemini Pro,1111,+6/-8,6581,Google,Proprietary,2023/4,https://blog.google/technology/ai/gemini-api-developers-cloud/
+42,GPT-3.5-Turbo-0314,1106,+9/-8,5670,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5
+44,Mixtral-8x7b-Instruct-v0.1,1114,+0/-0,68929,Mistral,Apache 2.0,2023/12,https://mistral.ai/news/mixtral-of-experts/
+44,Claude-Instant-1,1111,+3/-5,20675,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/introducing-claude
+46,Qwen1.5-14B-Chat,1109,+4/-4,18696,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5/
+46,WizardLM-70B-v1.0,1106,+6/-7,8421,Microsoft,Llama 2 Community,2023/8,https://huggingface.co/WizardLM/WizardLM-70B-V1.0
+46,GPT-3.5-Turbo-0125,1104,+3/-3,61835,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5-turbo
+46,DBRX-Instruct-Preview,1103,+3/-4,33006,Databricks,DBRX LICENSE,2023/12,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
+49,Phi-3-Small-8k-Instruct,1101,+4/-4,14500,Microsoft,MIT,2023/10,https://huggingface.co/microsoft/Phi-3-small-8k-instruct
+49,Tulu-2-DPO-70B,1099,+5/-6,6674,AllenAI/UW,AI2 ImpACT Low-risk,2023/11,https://huggingface.co/allenai/tulu-2-dpo-70b
+54,OpenChat-3.5-0106,1091,+6/-5,13010,OpenChat,Apache-2.0,2024/1,https://huggingface.co/openchat/openchat-3.5-0106
+55,Llama-2-70b-chat,1093,+3/-3,39695,Meta,Llama 2 Community,2023/7,https://huggingface.co/meta-llama/Llama-2-70b-chat-hf
+55,Vicuna-33B,1090,+4/-5,23001,LMSYS,Non-commercial,2023/8,https://huggingface.co/lmsys/vicuna-33b-v1.3
+55,Snowflake Arctic Instruct,1090,+3/-3,33443,Snowflake,Apache 2.0,2024/4,https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake/
+55,Starling-LM-7B-alpha,1088,+6/-6,10437,UC Berkeley,CC-BY-NC-4.0,2023/11,https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha
+56,Nous-Hermes-2-Mixtral-8x7B-DPO,1084,+8/-8,3840,NousResearch,Apache-2.0,2024/1,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+56,NV-Llama2-70B-SteerLM-Chat,1080,+10/-12,3640,Nvidia,Llama 2 Community,2023/11,https://huggingface.co/nvidia/Llama2-70B-SteerLM-Chat
+57,Gemma-1.1-7B-it,1084,+4/-4,23158,Google,Gemma license,2024/2,https://huggingface.co/google/gemma-1.1-7b-it
+60,pplx-70b-online,1077,+6/-7,6909,Perplexity AI,Proprietary,Online,https://blog.perplexity.ai/blog/introducing-pplx-online-llms
+60,DeepSeek-LLM-67B-Chat,1077,+8/-7,5000,DeepSeek AI,DeepSeek License,2023/11,https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat
+60,OpenChat-3.5,1076,+7/-5,8121,OpenChat,Apache-2.0,2023/11,https://huggingface.co/openchat/openchat_3.5
+62,OpenHermes-2.5-Mistral-7b,1074,+5/-7,5096,NousResearch,Apache-2.0,2023/11,https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
+62,Qwen1.5-7B-Chat,1070,+9/-7,4878,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5/
+63,Mistral-7B-Instruct-v0.2,1072,+4/-4,20099,Mistral,Apache-2.0,2023/12,https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
+63,GPT-3.5-Turbo-1106,1068,+4/-6,17063,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5
+63,Phi-3-Mini-4k-Instruct,1067,+6/-5,18604,Microsoft,MIT,2023/10,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+63,Dolphin-2.2.1-Mistral-7B,1063,+12/-12,1716,Cognitive Computations,Apache-2.0,2023/10,https://huggingface.co/ehartford/dolphin-2.2.1-mistral-7b
+64,SOLAR-10.7B-Instruct-v1.0,1062,+9/-10,4293,Upstage AI,CC-BY-NC-4.0,2023/11,https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0
+66,Llama-2-13b-chat,1063,+5/-5,19769,Meta,Llama 2 Community,2023/7,https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
+69,WizardLM-13b-v1.2,1058,+6/-8,7203,Microsoft,Llama 2 Community,2023/7,https://huggingface.co/WizardLM/WizardLM-13B-V1.2
+72,Zephyr-7b-beta,1053,+6/-7,11345,HuggingFace,MIT,2023/10,https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
+72,CodeLlama-70B-instruct,1042,+16/-15,1196,Meta,Llama 2 Community,2024/1,https://huggingface.co/codellama/CodeLlama-70b-hf
+73,MPT-30B-chat,1045,+11/-10,2651,MosaicML,CC-BY-NC-SA-4.0,2023/6,https://huggingface.co/mosaicml/mpt-30b-chat
+73,Zephyr-7b-alpha,1042,+12/-14,1816,HuggingFace,MIT,2023/10,https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha
+74,falcon-180b-chat,1033,+19/-17,1332,TII,Falcon-180B TII License,2023/9,https://huggingface.co/tiiuae/falcon-180B-chat
+75,pplx-7b-online,1045,+6/-6,6347,Perplexity AI,Proprietary,Online,https://blog.perplexity.ai/blog/introducing-pplx-online-llms
+76,CodeLlama-34B-instruct,1043,+7/-8,7532,Meta,Llama 2 Community,2023/7,https://huggingface.co/codellama/CodeLlama-34b-Instruct-hf
+77,Vicuna-13B,1041,+4/-5,19833,LMSYS,Llama 2 Community,2023/7,https://huggingface.co/lmsys/vicuna-13b-v1.5
+77,Gemma-7B-it,1037,+6/-7,9207,Google,Gemma license,2024/2,https://huggingface.co/google/gemma-7b-it
+77,Phi-3-Mini-128k-Instruct,1037,+4/-4,21678,Microsoft,MIT,2023/10,https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/
+77,Llama-2-7b-chat,1037,+5/-4,14604,Meta,Llama 2 Community,2023/7,https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
+77,Qwen-14B-Chat,1034,+8/-10,5076,Alibaba,Qianwen LICENSE,2023/8,https://huggingface.co/Qwen/Qwen-14B-Chat
+77,Guanaco-33B,1032,+11/-13,3002,UW,Non-commercial,2023/5,https://huggingface.co/timdettmers/guanaco-33b-merged
+86,Gemma-1.1-2B-it,1021,+6/-5,11391,Google,Gemma license,2024/2,https://huggingface.co/google/gemma-1.1-2b-it
+86,StripedHyena-Nous-7B,1017,+9/-8,5291,Together AI,Apache 2.0,2023/12,https://huggingface.co/togethercomputer/StripedHyena-Nous-7B
+87,OLMo-7B-instruct,1015,+8/-8,6527,Allen AI,Apache-2.0,2024/2,https://huggingface.co/allenai/OLMo-7B-Instruct
+90,Mistral-7B-Instruct-v0.1,1008,+5/-6,9165,Mistral,Apache 2.0,2023/9,https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
+90,Vicuna-7B,1004,+6/-7,7038,LMSYS,Llama 2 Community,2023/7,https://huggingface.co/lmsys/vicuna-7b-v1.5
+90,PaLM-Chat-Bison-001,1003,+8/-8,8758,Google,Proprietary,2021/6,https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models#foundation_models
+93,Gemma-2B-it,989,+8/-10,4936,Google,Gemma license,2024/2,https://huggingface.co/google/gemma-2b-it
+94,Qwen1.5-4B-Chat,988,+7/-5,7839,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5/
+97,Koala-13B,964,+10/-8,7041,UC Berkeley,Non-commercial,2023/4,https://bair.berkeley.edu/blog/2023/04/03/koala/
+97,ChatGLM3-6B,955,+10/-11,4770,Tsinghua,Apache-2.0,2023/10,https://huggingface.co/THUDM/chatglm3-6b
+98,GPT4All-13B-Snoozy,932,+17/-15,1793,Nomic AI,Non-commercial,2023/3,https://huggingface.co/nomic-ai/gpt4all-13b-snoozy
+99,MPT-7B-Chat,927,+9/-10,4026,MosaicML,CC-BY-NC-SA-4.0,2023/5,https://huggingface.co/mosaicml/mpt-7b-chat
+99,ChatGLM2-6B,924,+11/-10,2713,Tsinghua,Apache-2.0,2023/6,https://huggingface.co/THUDM/chatglm2-6b
+99,RWKV-4-Raven-14B,921,+7/-8,4954,RWKV,Apache 2.0,2023/4,https://huggingface.co/BlinkDL/rwkv-4-raven
+103,Alpaca-13B,901,+8/-8,5887,Stanford,Non-commercial,2023/3,https://crfm.stanford.edu/2023/03/13/alpaca.html
+103,OpenAssistant-Pythia-12B,893,+8/-10,6393,OpenAssistant,Apache 2.0,2023/4,https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
+104,ChatGLM-6B,879,+7/-13,5004,Tsinghua,Non-commercial,2023/3,https://huggingface.co/THUDM/chatglm-6b
+105,FastChat-T5-3B,868,+9/-12,4311,LMSYS,Apache 2.0,2023/4,https://huggingface.co/lmsys/fastchat-t5-3b-v1.0
+107,StableLM-Tuned-Alpha-7B,840,+11/-12,3347,Stability AI,CC-BY-NC-SA-4.0,2023/4,https://huggingface.co/stabilityai/stablelm-tuned-alpha-7b
+107,Dolly-V2-12B,823,+11/-12,3497,Databricks,MIT,2023/4,https://huggingface.co/databricks/dolly-v2-12b
+108,LLaMA-13B,798,+14/-13,2450,Meta,Non-commercial,2023/2,https://arxiv.org/abs/2302.13971
