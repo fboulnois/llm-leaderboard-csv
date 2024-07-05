@@ -148,7 +148,7 @@ dt_if_missing <- function(file, fn, ...) {
 
 set_working_directory()
 
-url <- "https://open-llm-leaderboard-open-llm-leaderboard.hf.space/"
+url <- "https://open-llm-leaderboard-old-open-llm-leaderboard.hf.space/"
 file <- "huggingface.csv"
 dt1 <- dt_if_missing(file, dt_from_html_hg, url)
 
