@@ -34,7 +34,7 @@ find_column_index <- function(json, column_name) {
   has_column_name <- function(header){
     any(str_detect(header, column_name))
   }
-  which(vapply(headers, has_column_name, logical(1)))
+  which(vapply(headers, has_column_name, logical(1)))[1]
 }
 
 normalize_json_headers_hg <- function(json, idx) {
