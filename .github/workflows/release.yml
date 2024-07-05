@@ -24,7 +24,9 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Run Docker image
-        run: docker run --volume ./csv:/home/docker/csv ${{ github.repository }}
+        run: docker run ${{ github.repository }}
+      - name: Copy the latest artifacts
+        run: cp -r $(docker ps -lq):/home/docker/csv ./csv
       - name: Set release name as current date
         run: |
           echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
