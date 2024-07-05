@@ -82,7 +82,7 @@ set_numeric_columns_hg <- function(dt) {
 }
 
 set_numeric_columns_lm <- function(dt) {
-  numeric_cols <- c("rank", "arena_elo", "votes")
+  numeric_cols <- c("rank", "arena_score", "votes")
   dt[, (numeric_cols) := lapply(.SD, as.numeric), .SDcols = numeric_cols]
 }
 
