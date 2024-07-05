@@ -1,0 +1,41 @@
+name: Release
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 11 * * *'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      - name: Remove existing artifacts
+        run: rm csv/*
+      - name: Build Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          tags: ${{ github.repository }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Run Docker image
+        run: docker run --volume ./csv:/home/docker/csv ${{ github.repository }}
+      - name: Set release name as current date
+        run: |
+          echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+      - name: Commit latest artifacts
+        uses: endbug/add-and-commit@v9
+        with:
+          add: csv
+          default_author: github_actions
+          message: "auto: update csv outputs to version ${{ env.RELEASE_NAME }}"
+          tag: ${{ env.RELEASE_NAME }}
+      - name: Upload the latest artifacts to releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "csv/*"
+          makeLatest: true
+          name: ${{ env.RELEASE_NAME }}
+          tag: ${{ env.RELEASE_NAME }}
