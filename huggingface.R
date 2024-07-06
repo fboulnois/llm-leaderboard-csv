@@ -10,6 +10,11 @@ set_working_directory <- function() {
     cwd <- dirname(fp[!is.na(fp)])
   }
   setwd(cwd)
+  cwd
+}
+
+dir_create_csv <- function(cwd) {
+  dir.create(file.path(cwd, "csv"), showWarnings = FALSE, recursive = TRUE)
 }
 
 # implement extract2 from magrittr
@@ -146,7 +151,8 @@ dt_if_missing <- function(file, fn, ...) {
   }
 }
 
-set_working_directory()
+cwd <- set_working_directory()
+dir_create_csv(cwd)
 
 url <- "https://open-llm-leaderboard-old-open-llm-leaderboard.hf.space/"
 file <- "huggingface.csv"
