@@ -25,3 +25,20 @@ jobs:
         run: docker run --name llm-leaderboard-csv ${{ github.repository }}
       - name: Copy Docker container artifacts
         run: docker cp llm-leaderboard-csv:/home/docker/csv/ ./
+      - name: Set release name as current date
+        run: |
+          echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+      - name: Commit latest artifacts
+        uses: endbug/add-and-commit@v9
+        with:
+          add: csv
+          default_author: github_actions
+          message: "auto: update csv outputs to version ${{ env.RELEASE_NAME }}"
+          tag: ${{ env.RELEASE_NAME }}
+      - name: Upload the latest artifacts to releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "csv/*"
+          makeLatest: true
+          name: ${{ env.RELEASE_NAME }}
+          tag: ${{ env.RELEASE_NAME }}
