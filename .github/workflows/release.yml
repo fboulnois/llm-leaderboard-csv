@@ -4,6 +4,24 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
+      - name: Remove existing artifacts
+        run: rm csv/*
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: ${{ github.repository }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Run Docker image
+        run: docker run --name llm-leaderboard-csv ${{ github.repository }}
+      - name: Copy Docker container artifacts
+        run: docker cp llm-leaderboard-csv:/home/docker/csv/ ./
