@@ -42,24 +42,6 @@ find_column_index <- function(json, column_name) {
   which(vapply(headers, has_column_name, logical(1)))[1]
 }
 
-normalize_json_headers_hg <- function(json, idx) {
-  headers <- json$components$props$value[[idx]]$headers
-  headers[str_detect(headers, "Average ⬆️")] <- "Average"
-  headers[str_detect(headers, "Hub ❤️")] <- "Hub Hearts"
-  headers <- str_replace_all(headers, " ", "_")
-  headers <- str_replace_all(headers, "\\W", "")
-  tolower(headers)
-}
-
-normalize_json_headers_lm <- function(json, idx) {
-  headers <- json$components$props$value[[idx]]$headers
-  headers <- str_trim(str_replace_all(headers, "\\W+", " "))
-  headers[str_detect(headers, "Rank UB")] <- "Rank"
-  headers[str_detect(headers, "95 CI")] <- "95 Pct CI"
-  headers <- str_replace_all(headers, " ", "_")
-  tolower(headers)
-}
-
 dt_from_json_index <- function(json, idx) {
   data <- json$components$props$value[[idx]]$data
   as.data.table(data)
@@ -105,6 +87,24 @@ dt_from_json <- function(json, fn, column) {
   setnames(dt, headers)
   add_model_url_columns(dt)
   set_dt_classes(dt)
+}
+
+normalize_json_headers_hg <- function(json, idx) {
+  headers <- json$components$props$value[[idx]]$headers
+  headers[str_detect(headers, "Average ⬆️")] <- "Average"
+  headers[str_detect(headers, "Hub ❤️")] <- "Hub Hearts"
+  headers <- str_replace_all(headers, " ", "_")
+  headers <- str_replace_all(headers, "\\W", "")
+  tolower(headers)
+}
+
+normalize_json_headers_lm <- function(json, idx) {
+  headers <- json$components$props$value[[idx]]$headers
+  headers <- str_trim(str_replace_all(headers, "\\W+", " "))
+  headers[str_detect(headers, "Rank UB")] <- "Rank"
+  headers[str_detect(headers, "95 CI")] <- "95 Pct CI"
+  headers <- str_replace_all(headers, " ", "_")
+  tolower(headers)
 }
 
 dt_from_html_hg <- function(url) {
