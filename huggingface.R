@@ -46,8 +46,8 @@ normalize_json_headers_hg <- function(json, idx) {
   headers <- json$components$props$value[[idx]]$headers
   headers[str_detect(headers, "Average ⬆️")] <- "Average"
   headers[str_detect(headers, "Hub ❤️")] <- "Hub Hearts"
-  headers[str_detect(headers, "#Params \\(B\\)")] <- "Params B"
   headers <- str_replace_all(headers, " ", "_")
+  headers <- str_replace_all(headers, "\\W", "")
   tolower(headers)
 }
 
@@ -56,7 +56,6 @@ normalize_json_headers_lm <- function(json, idx) {
   headers <- str_trim(str_replace_all(headers, "\\W+", " "))
   headers[str_detect(headers, "Rank UB")] <- "Rank"
   headers[str_detect(headers, "95 CI")] <- "95 Pct CI"
-  headers[str_detect(headers, "Votes")] <- "Votes"
   headers <- str_replace_all(headers, " ", "_")
   tolower(headers)
 }
@@ -81,56 +80,41 @@ add_model_url_columns <- function(dt) {
   dt[, c("model", "url") := model_name_and_url(model), by = .I]
 }
 
-set_numeric_columns_hg <- function(dt) {
-  numeric_cols <- c("average", "arc", "hellaswag", "mmlu", "truthfulqa", "winogrande", "gsm8k", "params_b", "hub_hearts")
-  dt[, (numeric_cols) := lapply(.SD, as.numeric), .SDcols = numeric_cols]
+is_column_class <- function(x, asclass) {
+  if(is.character(x)) {
+    suppressWarnings(all(!is.na(asclass(x))))
+  } else {
+    FALSE
+  }
 }
 
-set_numeric_columns_lm <- function(dt) {
-  numeric_cols <- c("rank", "arena_score", "votes")
-  dt[, (numeric_cols) := lapply(.SD, as.numeric), .SDcols = numeric_cols]
+set_column_class <- function(dt, asclass) {
+  cols <- names(dt)[vapply(dt, is_column_class, logical(1), asclass)]
+  dt[, (cols) := lapply(.SD, asclass), .SDcols = cols]
 }
 
-set_logical_columns_hg <- function(dt) {
-  logical_cols <- c("merged", "available_on_the_hub", "flagged", "moe")
-  dt[, (logical_cols) := lapply(.SD, as.logical), .SDcols = logical_cols]
+set_dt_classes <- function(dt) {
+  set_column_class(dt, as.numeric)
+  set_column_class(dt, as.logical)
 }
 
-set_dt_types_hg <- function(dt) {
-  set_numeric_columns_hg(dt)
-  set_logical_columns_hg(dt)
-}
-
-set_dt_types_lm <- function(dt) {
-  set_numeric_columns_lm(dt)
-}
-
-dt_from_json_hg <- function(json) {
-  idx <- find_column_index(json, "^Hub ❤️")
-  headers <- normalize_json_headers_hg(json, idx)
+dt_from_json <- function(json, fn, column) {
+  idx <- find_column_index(json, column)
+  headers <- fn(json, idx)
   dt <- dt_from_json_index(json, idx)
   setnames(dt, headers)
   add_model_url_columns(dt)
-  set_dt_types_hg(dt)
-}
-
-dt_from_json_lm <- function(json) {
-  idx <- find_column_index(json, "^Knowledge Cutoff")
-  headers <- normalize_json_headers_lm(json, idx)
-  dt <- dt_from_json_index(json, idx)
-  setnames(dt, headers)
-  add_model_url_columns(dt)
-  set_dt_types_lm(dt)
+  set_dt_classes(dt)
 }
 
 dt_from_html_hg <- function(url) {
   json <- json_from_html(url)
-  dt_from_json_hg(json)
+  dt_from_json(json, normalize_json_headers_hg, "^Hub ❤️")
 }
 
 dt_from_html_lm <- function(url) {
   json <- json_from_html(url)
-  dt_from_json_lm(json)
+  dt_from_json(json, normalize_json_headers_lm, "^Knowledge Cutoff")
 }
 
 dt_merge_tables <- function(dt1, dt2) {
@@ -155,12 +139,16 @@ cwd <- set_working_directory()
 dir_create_csv(cwd)
 
 url <- "https://open-llm-leaderboard-old-open-llm-leaderboard.hf.space/"
-file <- "huggingface.csv"
-dt1 <- dt_if_missing(file, dt_from_html_hg, url)
+file <- "huggingface_v1.csv"
+hg1 <- dt_if_missing(file, dt_from_html_hg, url)
 
 url <- "https://lmsys-chatbot-arena-leaderboard.hf.space/"
 file <- "lmsys.csv"
-dt2 <- dt_if_missing(file, dt_from_html_lm, url)
+lmsys <- dt_if_missing(file, dt_from_html_lm, url)
+
+url <- "https://open-llm-leaderboard-open-llm-leaderboard.hf.space/"
+file <- "huggingface_v2.csv"
+hg2 <- dt_if_missing(file, dt_from_html_hg, url)
 
 file <- "merged.csv"
-merged <- dt_if_missing(file, dt_merge_tables, dt1, dt2)
+merged <- dt_if_missing(file, dt_merge_tables, hg1, lmsys)
