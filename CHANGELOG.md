@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.2.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.1.0...v1.2.0) - 2024-07-12
+
+### Added
+
+* Add the new huggingface leaderboard
+
+### Changed
+
+* Move header normalization functions
+
 ## [v1.1.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.0.0...v1.1.0) - 2024-07-06
 
 ### Added
