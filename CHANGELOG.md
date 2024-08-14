@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.2.1](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.2.0...v1.2.1) - 2024-08-13
+
+### Fixed
+
+* Downgrade to 4.4.0 to avoid broken packages
+
 ## [v1.2.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.1.0...v1.2.0) - 2024-07-12
 
 ### Added
