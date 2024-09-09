@@ -24,7 +24,7 @@ rank,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
 23,Reka-Core-20240722,1231,+6/-6,12638,Reka AI,Proprietary,Unknown,https://docs.reka.ai/available-models
 23,Gemini-1.5-Flash-001,1227,+3/-3,62135,Google,Proprietary,2023/11,https://aistudio.google.com/app/prompts/new_chat?model=gemini-1.5-flash
 23,Jamba-1.5-Large,1218,+7/-6,7629,AI21 Labs,Jamba Open,2024/3,https://www.ai21.com/jamba
-23,command-r-plus-08-2024,1213,+14/-16,1843,Cohere,Proprietary,2024/8,https://docs.cohere.com/docs/command-r-plus#model-details
+23,Command R+ (08-2024),1213,+14/-16,1843,Cohere,CC-BY-NC-4.0,2024/8,https://docs.cohere.com/docs/command-r-plus#model-details
 25,Deepseek-v2-API-0628,1219,+4/-3,19438,DeepSeek AI,DeepSeek,Unknown,https://platform.deepseek.com/api-docs/updates#deepseek-chat
 25,Gemma-2-27b-it,1218,+4/-4,33751,Google,Gemma license,2024/6,https://aistudio.google.com/app/prompts/new_chat?model=gemma-2-27b-it
 25,Gemma-2-9b-it-SimPO,1214,+7/-6,8862,Princeton,MIT,2024/7,https://huggingface.co/princeton-nlp/gemma-2-9b-it-SimPO
@@ -38,7 +38,7 @@ rank,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
 34,Claude 3 Sonnet,1201,+2/-2,113053,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family
 34,Reka-Flash-20240722,1200,+4/-5,13014,Reka AI,Proprietary,Unknown,https://docs.reka.ai/available-models
 34,Reka-Core-20240501,1199,+3/-2,62642,Reka AI,Proprietary,Unknown,https://www.reka.ai/news/reka-core-our-frontier-class-multimodal-language-model
-40,Command R+,1190,+3/-2,80888,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r-plus-microsoft-azure/
+40,Command R+ (04-2024),1190,+3/-2,80888,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r-plus-microsoft-azure/
 40,Gemma-2-9b-it,1188,+4/-4,28281,Google,Gemma license,2024/6,https://aistudio.google.com/app/prompts/new_chat?model=gemma-2-9b-it
 40,Qwen2-72B-Instruct,1187,+3/-3,37463,Alibaba,Qianwen LICENSE,2024/6,https://qwenlm.github.io/blog/qwen2/
 40,GPT-4-0314,1186,+3/-3,55963,OpenAI,Proprietary,2021/9,https://openai.com/research/gpt-4
@@ -47,7 +47,7 @@ rank,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
 44,Claude 3 Haiku,1179,+3/-2,112921,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family
 44,DeepSeek-Coder-V2-Instruct,1178,+4/-4,15794,DeepSeek AI,DeepSeek License,2024/6,https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct
 44,Jamba-1.5-Mini,1174,+6/-6,7731,AI21 Labs,Jamba Open,2024/3,https://www.ai21.com/jamba
-44,command-r-08-2024,1172,+10/-14,1885,Cohere,Proprietary,2024/8,https://docs.cohere.com/docs/command-r-plus#model-details
+44,Command R (08-2024),1172,+10/-14,1885,Cohere,CC-BY-NC-4.0,2024/8,https://docs.cohere.com/docs/command-r-plus#model-details
 48,Meta-Llama-3.1-8b-Instruct,1168,+4/-5,20642,Meta,Llama 3.1 Community,2023/12,https://ai.meta.com/blog/meta-llama-3-1/
 48,Reka-Flash-Preview-20240611,1165,+5/-3,20461,Reka AI,Proprietary,Unknown,https://docs.reka.ai/http-api.html#generation
 49,GPT-4-0613,1163,+3/-2,91662,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
@@ -57,7 +57,7 @@ rank,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
 52,Reka-Flash-21B-online,1156,+4/-4,16027,Reka AI,Proprietary,Online,https://docs.reka.ai/http-api.html#generation
 54,Llama-3-8b-Instruct,1152,+3/-2,109362,Meta,Llama 3 Community,2023/3,https://llama.meta.com/llama3/
 56,Claude-1,1149,+4/-4,21163,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/introducing-claude
-56,Command R,1149,+3/-2,56363,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r
+56,Command R (04-2024),1149,+3/-2,56363,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r
 56,Reka-Flash-21B,1148,+5/-3,25795,Reka AI,Proprietary,2023/11,https://www.reka.ai/news/reka-flash-efficient-and-capable-multimodal-language-models
 57,Mistral Medium,1148,+4/-2,35545,Mistral,Proprietary,Unknown,https://mistral.ai/news/la-plateforme/
 57,Qwen1.5-72B-Chat,1147,+3/-3,40628,Alibaba,Qianwen LICENSE,2024/2,https://qwenlm.github.io/blog/qwen1.5/
