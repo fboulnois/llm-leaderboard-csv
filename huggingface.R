@@ -142,7 +142,7 @@ url <- "https://open-llm-leaderboard-old-open-llm-leaderboard.hf.space/"
 file <- "huggingface_v1.csv"
 hg1 <- dt_if_missing(file, dt_from_html_hg, url)
 
-url <- "https://lmsys-chatbot-arena-leaderboard.hf.space/"
+url <- "https://lmarena-ai-chatbot-arena-leaderboard.hf.space/"
 file <- "lmsys.csv"
 lmsys <- dt_if_missing(file, dt_from_html_lm, url)
 
