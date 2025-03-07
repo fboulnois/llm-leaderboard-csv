@@ -15,7 +15,7 @@ rank,rank_stylectrl,model,arena_score,95_pct_ci,votes,organization,license,knowl
 13,17,GLM-4-Plus-0111,1311,+8/-8,6035,Zhipu,Proprietary,Unknown,https://bigmodel.cn/dev/howuse/glm-4
 13,16,Qwen-Plus-0125,1310,+7/-5,6054,Alibaba,Proprietary,Unknown,https://www.alibabacloud.com/help/en/model-studio/developer-reference/what-is-qwen-llm
 13,6,Claude 3.7 Sonnet,1309,+9/-11,4254,Anthropic,Proprietary,Unknown,https://www.anthropic.com/news/claude-3-7-sonnet
-14,15,Gemini-2.0-Flash-Lite-Preview-02-05,1308,+5/-5,12774,Google,Proprietary,Unknown,https://aistudio.google.com/prompts/new_chat?model=gemini-2.0-flash-lite-preview-02-05
+14,15,Gemini-2.0-Flash-Lite,1308,+5/-5,12774,Google,Proprietary,Unknown,https://aistudio.google.com/prompts/new_chat?model=gemini-2.0-flash-lite
 14,20,Step-2-16K-Exp,1305,+7/-6,5132,StepFun,Proprietary,Unknown,https://platform.stepfun.com/docs/llm/text
 14,15,o3-mini,1304,+5/-4,15463,OpenAI,Proprietary,Unknown,https://openai.com/index/openai-o3-mini/
 14,20,o1-mini,1304,+4/-3,54923,OpenAI,Proprietary,2023/10,https://platform.openai.com/docs/models/o1
