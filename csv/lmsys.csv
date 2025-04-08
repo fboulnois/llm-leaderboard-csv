@@ -1,6 +1,6 @@
 rank,rank_stylectrl,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
 1,1,Gemini-2.5-Pro-Exp-03-25,1439,+7/-10,5858,Google,Proprietary,Unknown,http://aistudio.google.com/app/prompts/new_chat?model=gemini-2.5-pro-exp-03-25
-2,7,Llama-4-Maverick-03-26-Experimental,1417,+13/-12,2520,Meta,Llama,Unknown,https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+2,7,Llama-4-Maverick-03-26-Experimental,1417,+13/-12,2520,Meta,N/A,Unknown,https://ai.meta.com/blog/llama-4-multimodal-intelligence/
 2,1,ChatGPT-4o-latest (2025-03-26),1410,+8/-10,4899,OpenAI,Proprietary,Unknown,https://x.com/OpenAI/status/1905331956856050135
 2,5,Grok-3-Preview-02-24,1403,+6/-6,12391,xAI,Proprietary,Unknown,https://x.ai/blog/grok-3
 2,4,chocolate (Early Grok-3),1402,+5/-5,13865,xAI,Proprietary,Unknown,https://x.com/lmarena_ai/status/1891706264800936307
