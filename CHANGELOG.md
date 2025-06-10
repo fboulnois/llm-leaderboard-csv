@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.3.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.2.3...v1.3.0) - 2025-06-09
+
+### Added
+
+* Add ability to manually trigger release
+
+### Fixed
+
+* Remove deprecated huggingface leaderboards
+
 ## [v1.2.3](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.2.2...v1.2.3) - 2024-12-11
 
 ### Fixed
