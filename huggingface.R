@@ -89,21 +89,6 @@ dt_from_json <- function(json, fn, column) {
   set_dt_classes(dt)
 }
 
-dt_from_json_v2 <- function(json) {
-  dt <- as.data.table(json)
-  headers <- str_replace_all(colnames(dt), "\\.", "_")
-  setnames(dt, headers)
-}
-
-normalize_json_headers_hg <- function(json, idx) {
-  headers <- json$components$props$value[[idx]]$headers
-  headers[str_detect(headers, "Average ⬆️")] <- "Average"
-  headers[str_detect(headers, "Hub ❤️")] <- "Hub Hearts"
-  headers <- str_replace_all(headers, " ", "_")
-  headers <- str_replace_all(headers, "\\W", "")
-  tolower(headers)
-}
-
 normalize_json_headers_lm <- function(json, idx) {
   headers <- json$components$props$value[[idx]]$headers
   headers <- str_trim(str_replace_all(headers, "\\W+", " "))
@@ -113,25 +98,9 @@ normalize_json_headers_lm <- function(json, idx) {
   tolower(headers)
 }
 
-dt_from_html_hg <- function(url) {
-  json <- json_from_html(url)
-  dt_from_json(json, normalize_json_headers_hg, "^Hub ❤️")
-}
-
-dt_from_api_hg_v2 <- function(url) {
-  json <- fromJSON(url)
-  dt_from_json_v2(json)
-}
-
 dt_from_html_lm <- function(url) {
   json <- json_from_html(url)
   dt_from_json(json, normalize_json_headers_lm, "^Knowledge Cutoff")
-}
-
-dt_merge_tables <- function(dt1, dt2) {
-  dt1[, key := tolower(str_split_i(model_name, "/", 2))]
-  dt2[, key := tolower(model)]
-  merge(dt1, dt2, by = "key")
 }
 
 # read data.table from csv or calculate it
@@ -149,17 +118,6 @@ dt_if_missing <- function(file, fn, ...) {
 cwd <- set_working_directory()
 dir_create_csv(cwd)
 
-url <- "https://open-llm-leaderboard-old-open-llm-leaderboard.hf.space/"
-file <- "huggingface_v1.csv"
-hg1 <- dt_if_missing(file, dt_from_html_hg, url)
-
 url <- "https://lmarena-ai-chatbot-arena-leaderboard.hf.space/"
 file <- "lmsys.csv"
 lmsys <- dt_if_missing(file, dt_from_html_lm, url)
-
-url <- "https://open-llm-leaderboard-open-llm-leaderboard.hf.space/api/leaderboard/formatted"
-file <- "huggingface_v2.csv"
-hg2 <- dt_if_missing(file, dt_from_api_hg_v2, url)
-
-file <- "merged.csv"
-merged <- dt_if_missing(file, dt_merge_tables, hg2, lmsys)
