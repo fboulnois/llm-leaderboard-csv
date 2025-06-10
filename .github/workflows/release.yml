@@ -1,6 +1,10 @@
 name: Release
 on:
   workflow_dispatch:
+    inputs:
+      release_name:
+        required: true
+        type: string
   schedule:
     - cron: '0 11 * * *'
 jobs:
@@ -29,7 +33,12 @@ jobs:
         run: docker cp llm-leaderboard-csv:/home/docker/csv/ ./
       - name: Set release name as current date
         run: |
-          echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+          GH_RELEASE_NAME="${{ github.event.inputs.release_name }}"
+          if [ -n "${GH_RELEASE_NAME}" ]; then
+            echo "RELEASE_NAME=${GH_RELEASE_NAME}" >> $GITHUB_ENV
+          else
+            echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+          fi
       - name: Commit latest artifacts
         uses: endbug/add-and-commit@v9
         with:
