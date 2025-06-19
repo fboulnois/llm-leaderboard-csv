@@ -1,10 +1,13 @@
 # LLM Leaderboard CSVs
 
 Generate CSVs of the [Huggingface Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)
-(v1 and v2), the [LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard),
+(v1 and v2), the [LMArena (formerly LMSYS) Leaderboard](https://lmarena.ai/?leaderboard),
 and the merged leaderboard in R.
 
-The latest CSVs can be downloaded from the [Releases](https://github.com/fboulnois/llm-leaderboard-csv/releases) page.
+The latest LMArena CSV can be downloaded from the [Releases](https://github.com/fboulnois/llm-leaderboard-csv/releases) page.
+
+The v1 and v2 Open LLM Leaderboards have been retired. The latest code and versions of
+those CSVs is in the [`v1.3.0` release](https://github.com/fboulnois/llm-leaderboard-csv/releases/v1.3.0).
 
 ## Run
 
