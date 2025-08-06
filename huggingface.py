@@ -11,6 +11,7 @@ import pandas as pd
 import pickle
 import subprocess
 import sys
+from datetime import datetime
 
 def clone_lmarena_repo():
     url = "https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard"
@@ -26,24 +27,36 @@ def clone_lmarena_repo():
 def get_date_from_filename(filename):
     return filename.split('_')[-1].split('.')[0]
 
-def get_latest_pkl(repo):
+def get_pkl_by_date(repo, target):
     files = glob.glob(f"{repo}/*.pkl")
     if not files:
         raise FileNotFoundError("No .pkl files found in the lmarena directory.")
+
+    exact = f"{repo}/elo_results_{target}.pkl"
+    if os.path.exists(exact):
+        return exact
+
+    older = [f for f in files if get_date_from_filename(f) < target]
+    if older:
+        older.sort(key=get_date_from_filename, reverse=True)
+        print(f"File not found: {exact}. Using {older[0]} instead.", file=sys.stderr)
+        return older[0]
+    
     files.sort(key=get_date_from_filename, reverse=True)
+    print(f"File not found: {exact}. Using latest file {files[0]} instead.", file=sys.stderr)
     return files[0]
 
 def get_date_version(repo, argv):
     if len(argv) > 2:
         raise ValueError("Expected 0 or 1 arguments, got {}".format(len(argv) - 1))
-    filename = "invalid"
-    if len(argv) == 2:
-        date = argv[1].replace(".", "")
-        filename = f"{repo}/elo_results_{date}.pkl"
-    if not os.path.exists(filename):
-        print(f"File not found: {filename}. Using latest file instead.", file=sys.stderr)
-        filename = get_latest_pkl(repo)
-        date = get_date_from_filename(filename)
+    elif len(argv) == 2:
+        target = argv[1].replace(".", "")
+    else:
+        target = datetime.now().strftime("%Y%m%d")
+
+    filename = get_pkl_by_date(repo, target)
+    date = get_date_from_filename(filename)
+
     return date, filename
 
 def load_lmarena_data(filename, subset):
