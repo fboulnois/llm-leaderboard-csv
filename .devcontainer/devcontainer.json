@@ -1,0 +1,14 @@
+{
+    "name": "Python",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "github.copilot-chat"
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt update && sudo apt install -y git-lfs && pip install uv",
+    "remoteUser": "vscode"
+}
