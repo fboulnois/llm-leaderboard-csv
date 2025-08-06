@@ -16,7 +16,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v4
       - name: Remove existing artifacts
-        run: rm csv/*
+        run: rm -f csv/*
       - name: Set release name as current date
         run: |
           GH_RELEASE_NAME="${{ github.event.inputs.release_name }}"
