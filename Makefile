@@ -6,4 +6,4 @@ build:
 	$(DOCKER) build . --tag $(DIRNAME)
 
 run:
-	$(DOCKER) run -v ./csv:/home/docker/csv --rm $(DIRNAME)
+	$(DOCKER) run -v ./csv:/home/uv/csv --rm $(DIRNAME)
