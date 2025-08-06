@@ -1,5 +1,23 @@
 # Changelog
 
+## [v2.0.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.3.0...v2.0.0) - 2025-08-06
+
+### Added
+
+* Update release github action
+* Add python devcontainer build
+* Add script for new lmarena leaderboards
+
+### Changed
+
+* Remove R script in favor of Python
+* Switch dockerfile and makefile to use uv
+
+### Fixed
+
+* Do not error if directory is missing
+* Return closest file older than target
+
 ## [v1.3.0](https://github.com/fboulnois/llm-leaderboard-csv/compare/v1.2.3...v1.3.0) - 2025-06-09
 
 ### Added
