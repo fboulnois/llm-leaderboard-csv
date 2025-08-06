@@ -1,21 +1,20 @@
 rank,rank_stylectrl,model,arena_score,95_pct_ci,votes,organization,license,knowledge_cutoff,url
-1,1,Imagen-4.0-ultra-generate-preview-06-06,1139,+3/-3,22258,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-ultra-generate-preview-06-06
-2,1,GPT-Image-1,1136,+3/-3,43505,OpenAI,Proprietary,,https://platform.openai.com/docs/models/gpt-image-1
-3,3,Imagen-4.0-generate-preview-06-06-v2,1117,+3/-3,22594,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate-preview-06-06
-4,3,Imagen-4.0-ultra-generate-preview-06-06,1113,+4/-4,14223,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-ultra-generate-preview-06-06
-5,5,Imagen-4.0-generate-preview-05-20,1090,+4/-4,22217,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate-preview-05-20
-6,6,FLUX-1-Kontext-Max,1072,+3/-3,35485,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext
-7,6,FLUX-1-Kontext-Pro,1068,+3/-3,36006,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext
-8,7,Seedream 3.0,1065,+3/-3,31527,Bytedance,Proprietary,,https://seed.bytedance.com/en/tech/seedream3_0
-9,8,Imagen-3.0-generate-002,1061,+3/-3,143004,Google,Proprietary,,https://deepmind.google/technologies/imagen-3/
-10,10,Luma Photon,1033,+3/-3,60928,Luma AI,Proprietary,,https://replicate.com/luma/photon
-11,10,Ideogram 3.0 (quality),1031,+3/-3,32537,Ideogram,Proprietary,,https://about.ideogram.ai/3.0
-12,12,Recraft V3,1021,+3/-3,118212,Recraft,Proprietary,,https://www.recraft.ai/blog/recraft-introduces-a-revolutionary-ai-model-that-thinks-in-design-language
-13,13,Ideogram 2.0,1008,+3/-3,114717,Ideogram,Proprietary,,https://replicate.com/ideogram-ai/ideogram-v2
-14,14,FLUX1.1 [pro],1000,+3/-3,105903,Black Forest Labs,Proprietary,,https://replicate.com/black-forest-labs/flux-1.1-pro
-15,15,Gemini-2.0-Flash-Preview-Image-Generation,985,+3/-3,36628,Google,Proprietary,,https://aistudio.google.com/app/prompts/new_chat?model=gemini-2.0-flash-preview-image-generation
-16,16,DALL·E 3,978,+3/-3,109553,OpenAI,Proprietary,,https://platform.openai.com/docs/models#dall-e
-17,17,FLUX-1-Kontext-Dev,969,+4/-4,18897,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext-dev
-18,17,FLUX.1 [dev] (fp8),967,+3/-3,50585,Black Forest Labs,Open,,https://fireworks.ai/models/fireworks/flux-1-dev-fp8
-19,19,Stable Diffusion 3.5 Large,936,+3/-3,24050,Stability AI,Open,,https://fal.ai/models/fal-ai/stable-diffusion-v35-large
-20,20,BAGEL,915,+5/-5,12338,Bytedance,Apache 2.0,,https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
+1,1,Imagen-4.0-ultra-generate-preview-06-06,1137,+3/-3,23376,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-ultra-generate-preview-06-06
+2,1,GPT-Image-1,1134,+4/-4,47190,OpenAI,Proprietary,,https://platform.openai.com/docs/models/gpt-image-1
+3,3,Imagen-4.0-generate-preview-06-06,1115,+3/-3,23658,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate-preview-06-06
+4,4,Imagen-4.0-generate-preview-05-20,1089,+4/-4,22217,Google,Proprietary,,https://cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate-preview-05-20
+5,5,FLUX-1-Kontext-Max,1071,+3/-3,39411,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext
+6,5,FLUX-1-Kontext-Pro,1066,+3/-3,39853,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext
+7,5,Seedream 3.0,1064,+4/-4,34487,Bytedance,Proprietary,,https://seed.bytedance.com/en/tech/seedream3_0
+8,6,Imagen-3.0-generate-002,1059,+3/-3,145785,Google,Proprietary,,https://deepmind.google/technologies/imagen-3/
+9,9,Luma Photon,1032,+3/-3,63914,Luma AI,Proprietary,,https://replicate.com/luma/photon
+10,9,Ideogram 3.0 (quality),1028,+4/-4,35526,Ideogram,Proprietary,,https://about.ideogram.ai/3.0
+11,11,Recraft V3,1020,+3/-3,121359,Recraft,Proprietary,,https://www.recraft.ai/blog/recraft-introduces-a-revolutionary-ai-model-that-thinks-in-design-language
+12,12,Ideogram 2.0,1008,+3/-3,117755,Ideogram,Proprietary,,https://replicate.com/ideogram-ai/ideogram-v2
+13,13,FLUX1.1 [pro],999,+3/-3,108734,Black Forest Labs,Proprietary,,https://replicate.com/black-forest-labs/flux-1.1-pro
+14,14,Gemini-2.0-Flash-Preview-Image-Generation,985,+4/-4,39576,Google,Proprietary,,https://aistudio.google.com/app/prompts/new_chat?model=gemini-2.0-flash-preview-image-generation
+15,14,DALL·E 3,978,+3/-3,112119,OpenAI,Proprietary,,https://platform.openai.com/docs/models#dall-e
+16,16,FLUX-1-Kontext-Dev,967,+5/-5,21452,Black Forest Labs,Proprietary,,https://bfl.ai/announcements/flux-1-kontext-dev
+17,16,FLUX.1 [dev] (fp8),966,+3/-3,50585,Black Forest Labs,Open,,https://fireworks.ai/models/fireworks/flux-1-dev-fp8
+18,18,Stable Diffusion 3.5 Large,935,+4/-4,24050,Stability AI,Open,,https://fal.ai/models/fal-ai/stable-diffusion-v35-large
+19,19,BAGEL,914,+5/-5,12340,Bytedance,Apache 2.0,,https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
