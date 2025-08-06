@@ -38,7 +38,7 @@ jobs:
       - name: Run Docker image
         run: docker run --name llm-leaderboard-csv ${{ github.repository }} ${{ env.RELEASE_NAME }}
       - name: Copy Docker container artifacts
-        run: docker cp llm-leaderboard-csv:/home/docker/csv/ ./
+        run: docker cp llm-leaderboard-csv:/home/uv/csv/ ./
       - name: Commit latest artifacts
         uses: endbug/add-and-commit@v9
         with:
