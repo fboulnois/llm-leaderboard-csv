@@ -17,6 +17,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Remove existing artifacts
         run: rm csv/*
+      - name: Set release name as current date
+        run: |
+          GH_RELEASE_NAME="${{ github.event.inputs.release_name }}"
+          if [ -n "${GH_RELEASE_NAME}" ]; then
+            echo "RELEASE_NAME=${GH_RELEASE_NAME}" >> $GITHUB_ENV
+          else
+            echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+          fi
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Build Docker image
@@ -28,17 +36,9 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Run Docker image
-        run: docker run --name llm-leaderboard-csv ${{ github.repository }}
+        run: docker run --name llm-leaderboard-csv ${{ github.repository }} ${{ env.RELEASE_NAME }}
       - name: Copy Docker container artifacts
         run: docker cp llm-leaderboard-csv:/home/docker/csv/ ./
-      - name: Set release name as current date
-        run: |
-          GH_RELEASE_NAME="${{ github.event.inputs.release_name }}"
-          if [ -n "${GH_RELEASE_NAME}" ]; then
-            echo "RELEASE_NAME=${GH_RELEASE_NAME}" >> $GITHUB_ENV
-          else
-            echo "RELEASE_NAME=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
-          fi
       - name: Commit latest artifacts
         uses: endbug/add-and-commit@v9
         with:
