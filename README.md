@@ -26,5 +26,5 @@ A [`Dockerfile`](Dockerfile) is also provided to build and run the code using th
 
 ```bash
 docker build . --tag llm-leaderboard-csv
-docker run -v ./csv:/home/docker/csv --rm llm-leaderboard-csv
+docker run -v ./csv:/home/uv/csv --rm llm-leaderboard-csv
 ```
